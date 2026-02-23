@@ -1,3 +1,9 @@
+USE master
+GO
+
+CREATE DATABASE LitioDB
+GO
+
 USE LitioDB
 
 GO
@@ -22,6 +28,7 @@ CREATE TABLE dim_pais_detalles (
     nombre_pais VARCHAR (100) NOT NULL, -- LO MEJOR ES USAR EL NOMBRE DE PAIS (Entity) como ID para que reconozca el csv
     metodo_id INT,
     reservas_ton BIGINT,
+	recursos_ton BIGINT,
     CONSTRAINT PK_dim_pais_detalles PRIMARY KEY (nombre_pais),
     CONSTRAINT FK_dim_pais_detalles_dim_metodo_extraccion FOREIGN KEY (metodo_id) REFERENCES dim_metodo_extraccion (metodo_id)
 )

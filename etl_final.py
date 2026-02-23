@@ -25,11 +25,12 @@ print("Preparando tabla países")
 df_paises = pd.DataFrame({
     'nombre_pais': ['Argentina', 'Chile', 'Bolivia', 'Australia', 'China', 'United States', 'Brazil', 'Canada', 'Zimbabwe', 'Portugal'],
     'metodo_id':   [1,           1,       1,         2,           3,       1,               2,        2,        2,          2],
-    'reservas_ton':[3600000,     9300000, 23000000,  4800000,     3000000, 1100000,         390000,   1200000,  480000,     270000]
+    'reservas_ton': [4000000,     9300000, 0,         7000000,     3000000, 1800000,         390000,   1200000,  480000,     60000],
+    'recursos_ton': [23000000,   11000000, 23000000,  8900000,     6800000, 19000000,        1300000,  5700000,  860000,     270000]
 })
 
 print("Leyendo CSV producción")
-df_prod = pd.read_csv('data/raw/lithium-production.csv')
+df_prod = pd.read_csv(r'C:\Users\Usuario\Documents\Proyecto_Litio\data\raw\lithium-production.csv')
 
 lista_paises_validos = df_paises['nombre_pais'].tolist()
 df_prod = df_prod[df_prod['Entity'].isin(lista_paises_validos)].copy()
