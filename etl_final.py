@@ -46,10 +46,10 @@ try:
     print("Precios cargados.")
 
     df_paises.to_sql('dim_pais_detalles', con=engine, if_exists='append', index=False)
-    print("   ✅ Países cargados.")
+    print("Países cargados.")
     
     df_prod.to_sql('fact_produccion', con=engine, if_exists='append', index=False)
-    print("   ✅ Producción cargada.")
+    print("Producción cargada.")
 
     print('\n Proceso terminado. Base de datos cargada')
 
