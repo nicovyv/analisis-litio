@@ -38,7 +38,6 @@ Los datos crudos provienen de tres fuentes documentales distintas:
 
 
 ## Modelado de Datos
-El proyecto implementa un esquema de estrella centralizado:
 
 * **Tabla de Hechos:** `fact_produccion` (Producción anual por país).
 * **Tablas de Dimensiones:**
@@ -49,7 +48,7 @@ El proyecto implementa un esquema de estrella centralizado:
 
 ## Complicaciones Encontradas y Soluciones
 * **Ambigüedad de Datos:** China presenta un modelo de extracción mixto (mayoritariamente roca, pero con vastas reservas de salmuera).
-  * *Solución aplicada:* Se creó un método de extracción sintético "Mixto China (70s/30r)" asumiendo un peso ponderado de 70% roca y 30% salmuera, resultando en una tasa de 104.000 Litros/Ton. 
+  * *Solución aplicada:* Se creó un método de extracción sintético "Mixto China (70r/30s)" asumiendo un peso ponderado de 70% roca y 30% salmuera, resultando en una tasa de 104.000 Litros/Ton. 
 
 ## Visualización y Análisis
 El dashboard consta de 4 páginas:
