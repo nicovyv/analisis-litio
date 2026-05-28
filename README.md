@@ -4,7 +4,7 @@
 Proyecto de ingeniería y análisis de datos sobre el mercado global de extracción de litio.
 
 * **Objetivo del proyecto:** Visualizar la producción histórica, el futuro de las reservas y el costo hídrico asociado a los distintos métodos de extracción de litio a nivel global.
-Este análisis tiene un fin estrictamente informativo y descriptivo. No busca politizar ni emitir juicios de valor sobre la explotación de recursos o contaminación, sino proporcionar datos para que cada quién saque sus propias conclusiones.
+Este análisis tiene un fin estrictamente informativo y descriptivo.
 
 * **Contexto del análisis:** El análisis abarca la producción de los 10 principales países actores del mercado entre los años 2015 y 2024.
 
